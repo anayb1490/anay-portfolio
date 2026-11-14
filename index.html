@@ -304,6 +304,12 @@ body:not([data-tab="home"]) .hero { display: none; }
   .hero { grid-template-columns: 1fr; }
   .headshot { order: -1; width: 120px; height: 120px; box-shadow: 0 0 0 4px var(--surface); }
 }
+
+.lede-meta { font-family: var(--font-mono); font-size: 13px; color: var(--muted); letter-spacing: .02em; margin-top: -8px; }
+
+.home-tiles { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 980px) { .home-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .home-tiles { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -326,7 +332,8 @@ body:not([data-tab="home"]) .hero { display: none; }
       <div class="hero-text">
       <h1>Anay Basu</h1>
       <span class="eyebrow">AI &amp; Data Engineer</span>
-      <p class="lede">LLM applications &middot; data pipelines &middot; deep learning<br>Northeastern '25, CS + Behavioral Neuroscience &middot; Open to relocation (US)</p>
+      <p class="lede">Training in computer science and neuroscience.<br>Experience across AI research, consulting and data science.<br>Focus: LLM applications, data pipelines, deep learning.</p>
+        <p class="lede-meta">Northeastern '25 &middot; CS + Behavioral Neuroscience &middot; Open to relocation (US)</p>
       <div class="actions">
         <a class="btn primary js-resume" href="Anay_Basu_Resume.pdf" download><span class="dl" aria-hidden="true"></span>Resume (PDF)</a>
         <a class="btn" href="https://www.github.com/anayb1490" target="_blank" rel="noopener">GitHub</a>
@@ -342,26 +349,27 @@ body:not([data-tab="home"]) .hero { display: none; }
 
       <div class="home-cols">
         <div class="home-col">
-          <h3>What I do</h3>
+          <h3>Focus areas</h3>
           <ul>
-            <li>LLM applications: tool calling, RAG, structured outputs</li>
-            <li>Data pipelines in Python and SQL</li>
-            <li>Deep learning in PyTorch</li>
+            <li>LLM applications</li>
+            <li>Data pipelines and analysis</li>
+            <li>Deep learning</li>
           </ul>
         </div>
         <div class="home-col">
-          <h3>What sets me apart</h3>
+          <h3>Experience</h3>
           <ul>
-            <li>CS + neuroscience background</li>
-            <li>Evaluation first: AI tested against real labels</li>
-            <li>Experience with medical and clinical data</li>
+            <li>AI research</li>
+            <li>AI consulting</li>
+            <li>Data science internships</li>
+            <li>Independent app development</li>
           </ul>
         </div>
         <div class="home-col">
           <h3>Looking for</h3>
           <ul>
             <li>Entry-level AI / data engineering roles</li>
-            <li>Teams putting AI into real use</li>
+            <li>Full-time</li>
             <li>Open to relocating anywhere in the US</li>
           </ul>
         </div>
@@ -370,17 +378,18 @@ body:not([data-tab="home"]) .hero { display: none; }
       <h3 class="ov-h">Path so far</h3>
       <ol class="ov-path">
         <li><span>CS + Neuroscience</span><small>Northeastern '25</small></li>
-        <li><span>Brain MRI deep learning</span><small>BIDMC research</small></li>
-        <li><span>Data science</span><small>Internships</small></li>
-        <li><span>IBM AI Engineering</span><small>Professional Certificate</small></li>
-        <li><span>LLM systems</span><small>Consulting</small></li>
-        <li><span>My own AI apps</span><small>Ariadne, Unblockable</small></li>
+        <li><span>Medical imaging research</span><small>2023</small></li>
+        <li><span>Data science internships</span><small>2024 to 2025</small></li>
+        <li><span>AI engineering certificate</span><small>2026</small></li>
+        <li><span>LLM consulting</span><small>2026</small></li>
+        <li><span>Independent AI apps</span><small>Ongoing</small></li>
       </ol>
 
       <h3 class="ov-h">Explore</h3>
       <div class="home-tiles">
-        <a class="home-tile" href="#experience"><strong>Experience</strong><span>4 roles: AI, data science, research</span><em aria-hidden="true">&rarr;</em></a>
+        <a class="home-tile" href="#experience"><strong>Experience</strong><span>AI, data science, research</span><em aria-hidden="true">&rarr;</em></a>
         <a class="home-tile" href="#projects"><strong>Projects</strong><span>2 apps with video demos</span><em aria-hidden="true">&rarr;</em></a>
+        <a class="home-tile" href="#education"><strong>Education</strong><span>B.S. degree and IBM AI certificate</span><em aria-hidden="true">&rarr;</em></a>
         <a class="home-tile" href="#skills"><strong>Skills</strong><span>AI, data, languages, engineering</span><em aria-hidden="true">&rarr;</em></a>
       </div>
 
